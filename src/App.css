@@ -1,38 +1,125 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.inputContainer,
+.outputContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.inputArea,
+.smallInputArea {
+  height: auto;
+  max-width: 600px;
+  margin: 10px 0;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+.smallInputArea {
+  max-width: 400px;
+  padding: 10px;
+  font-size: 0.85em;
+  margin-right: 10px;
+}
+
+.fileSelectionContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.fileSelectionContainer div {
+  display: flex;
+  align-items: center;
+}
+
+.fileSelectionContainer label {
+  margin-left: 5px;
+}
+
+.fileTypesContainer {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 1px;
+  margin-bottom: 20px;
+}
+
+.fileTypesContainer div {
+  display: flex;
+  align-items: center;
+}
+
+.fileTypesContainer label {
+  margin-left: 5px;
+}
+
+.outputArea {
+  height: 200px;
+  margin: 10px 0;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+.buttonContainer {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.transformButton,
+.addButton {
+  font-size: 1em;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
   color: white;
+  background-color: #007bff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.transformButton:hover,
+.addButton:hover {
+  background-color: #0056b3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.addButton {
+  padding: 5px 10px;
+  font-size: 0.85em;
+}
+
+.copyButton {
+  font-size: 1em;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background-color: #007bff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.copyButton:hover {
+  background-color: #0056b3;
 }

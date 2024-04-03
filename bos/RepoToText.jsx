@@ -1,4 +1,4 @@
-// bos/devbotApp.jsx
+// bos/RepoToText.jsx
 const externalAppUrl = 'http://localhost:3000'
 
 return (
