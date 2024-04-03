@@ -83,7 +83,7 @@ class GithubRepoScraper:
     def write_to_file(self, files_data):
         """Built .txt file with all of the repo's files"""
         timestamp = datetime.now().strftime("%Y%m%d%H%M%S")
-        filename = f"/app/data/{self.repo_name.replace('/', '_')}_{timestamp}.txt"
+        filename = f"/data/{self.repo_name.replace('/', '_')}_{timestamp}.txt"
         with open(filename, "w", encoding='utf-8') as f:
             doc_text = self.scrape_doc()
             if doc_text:
@@ -138,7 +138,11 @@ def scrape():
 
     return jsonify({"response": file_content})
 
-if __name__ == "__main__": # -- UNCOMMENT TO RUN WITH DOCKER
+if __name__ == "__main__": 
+    # Set the FLASK_ENV environment variable to 'production'
+    os.environ['FLASK_ENV'] = 'production'
+
+    #run the Flask app
     app.run(host='0.0.0.0')
 
 # if __name__ == "__main__": -- UNCOMMENT TO RUN LOCALLY WITHOUT DOCKER
