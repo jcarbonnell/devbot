@@ -1,3 +1,5 @@
+# foldertotext.py
+
 import os
 import re
 from datetime import datetime

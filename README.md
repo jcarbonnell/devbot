@@ -1,8 +1,23 @@
-# Getting Started with Create React App
+# NEAR Dev Bot
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Your AI coding assistant on the Near Protocol.
 
-## Available Scripts
+Is built as a React application with TypeScript, a Flask backend to handle the github scraping funcitonality and a Near BOS frontend. Here's a breakdown of each file:
+
+- package.json: Contains metadata about the project and its dependencies.\
+- public/index.html: The main HTML template for the React application.\
+- public/manifest.json: JSON file that provides metadata used when the web app is installed on a user's mobile device or desktop.\
+- public/robots.txt: Specifies rules for web crawlers about which pages or files the crawler can or cannot request from the website.\
+- requirements.txt: Specifies Python dependencies for the project.\
+- src/App.css: CSS file containing styles for the components in the React application.\
+- src/index.css: CSS file containing global styles applied to the entire application.\
+- src/logo.svg: SVG image file used as a logo for the application.\
+- src/react-app-env.d.ts: TypeScript declaration file for global types used in the React application.\
+- src/reportWebVitals.ts: JavaScript file containing functions to report web vital metrics.\
+- src/services/getTasks.ts: TypeScript file defining a function to fetch tasks from a social bridge API.\
+- src/services/storeTasks.ts: TypeScript file defining a function to store tasks using a social bridge API.\
+- src/setupTests.ts: JavaScript file containing setup for Jest tests.\
+- tsconfig.json: TypeScript configuration file specifying compiler options for the project.\
 
 In the project directory, you can run:
 
@@ -11,36 +26,11 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
 ### `yarn test`
 
 Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `yarn build`
 
 Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for deploying after build.
