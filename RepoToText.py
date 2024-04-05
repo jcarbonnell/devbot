@@ -143,7 +143,7 @@ if __name__ == "__main__":
     os.environ['FLASK_ENV'] = 'production'
 
     #run the Flask app with docker
-    app.run(host='0.0.0.0')
+    #app.run(host='0.0.0.0')
 
     # RUN LOCALLY WITHOUT DOCKER
-    #app.run(port=5000)
+    app.run(port=5000)
