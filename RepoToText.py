@@ -18,7 +18,7 @@ from requests.exceptions import RequestException
 from retry import retry
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/scrape": {"origins": "https://devbot.hellopartage.xyz"}})
 
 class GithubRepoScraper:
     """Scrape GitHub repositories."""
@@ -142,8 +142,8 @@ if __name__ == "__main__":
     # Set the FLASK_ENV environment variable to 'production'
     os.environ['FLASK_ENV'] = 'production'
 
-    #run the Flask app
+    #run the Flask app with docker
     app.run(host='0.0.0.0')
 
-# if __name__ == "__main__": -- UNCOMMENT TO RUN LOCALLY WITHOUT DOCKER
-#     app.run(port=5000)
+    # RUN LOCALLY WITHOUT DOCKER
+    #app.run(port=5000)

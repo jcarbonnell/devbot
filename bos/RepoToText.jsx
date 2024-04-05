@@ -1,5 +1,5 @@
 // bos/RepoToText.jsx
-const externalAppUrl = 'http://localhost:3000'
+const externalAppUrl = 'https://devbot.hellopartage.xyz:5000'
 
 return (
     <Widget

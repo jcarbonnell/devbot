@@ -101,7 +101,7 @@ function App() {
     }
 
     try {
-      const result = await axios.post('http://localhost:5000/scrape', {
+      const result = await axios.post('https://devbot.hellopartage.xyz/scrape', {
         repoUrl,
         docUrl,
         selectedFileTypes: fileTypesToSend,
